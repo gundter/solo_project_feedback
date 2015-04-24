@@ -27,18 +27,23 @@ $(document).ready(function(){
     $('button').on("click", function(){
        for (i = 0; i < shoutOuts.length; i++){
            //console.log(el);
-           $('#show').append("<li class='newBullet'>" + shoutOuts[i] + "</li>");
+           $('#show').append("<li class='newBullet'>" + shoutOuts[i] + "<button class='enlarge'>Click ME!</button></li>");
 
-           $(".newBullet").hide().delay( i * 1000).slideDown();
+           $(".newBullet").hide().delay( i * 500).slideDown("slow");
 
        }
     });
 
-    //$('#show').on('click','.newBullet', function(){
-    //    $(this).animate({
-    //        fontSize: "150%",
-    //        opacity: "0.6"
-    //    }, 1500);
-    //});
+    $('#show').on('click','.enlarge', function(){
+        $(this).parent().animate({
+            fontSize: "+=150%",
+            opacity: "+=0.6"
+        }, 2000, function(){
+            $(this).parent().animate({
+                fontSize: "-=150%",
+                opacity: "-=0.6"
+            }, 2000);
+        });
+    });
 
 });
