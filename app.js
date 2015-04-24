@@ -34,11 +34,11 @@ $(document).ready(function(){
        }
     });
 
-    $('ul').on('click','.newBullet', function(){
-        $(this).animate({
-            fontSize: "150%",
-            opacity: "0.6"
-        });
-    });
+    //$('#show').on('click','.newBullet', function(){
+    //    $(this).animate({
+    //        fontSize: "150%",
+    //        opacity: "0.6"
+    //    }, 1500);
+    //});
 
 });
