@@ -1,0 +1,22 @@
+body {
+    background-color: #DAE5E3;
+}
+
+h1 {
+    text-align: center;
+}
+.container {
+    width: 100%;
+    text-align: center;
+}
+button{
+    width: 100px;
+    margin: 0 auto;
+    background-color: #07AA9E;
+}
+button:hover {
+    background-color: #7fffd4;
+}
+ul {
+    list-style-type: none;
+}
